@@ -7,6 +7,8 @@
 %%Math symbols, proof environments
 \usepackage{amsmath,amsthm,amssymb, graphicx}
 
+\newcommand{\atan}{\tan^{-1}}
+
 %%Use this package for matrices
 \usepackage{array}
 
@@ -14,9 +16,9 @@
 \newcommand{\R}{\mathbb{R}} %Real numbers
 \newcommand{\Z}{\mathbb{Z}} %Integers
 
-\title{Math 61 Worksheet 5 Template} %Remove Template in your title
+\title{ECE 141 Project} %Remove Template in your title
 
-\author{Sample Student} %Put your name here
+\author{Inesh Chakrabarti} %Put your name here
 
 \date{\today}
 
@@ -25,32 +27,20 @@
 \maketitle
 
 \subsection*{Problem 1}
-Consider ordered strings of 1's and 2's. Let $f_n$ count the number of such strings that sum to $n-1$. For example, $f_3=2$ because there are exactly $2$ ordered strings that sum to $3-1=2$: $11$ and $2$. We also have $f_1=1$ because there is exactly one string that sums to nothing, namely the empty string.
-\begin{enumerate}
-\item[(a)] Give a combinatorial argument to show that $f_n=f_{n-1}+f_{n-2}$ for $n\geq 2$.
-\begin{proof}
-
+Show that for any desired $\beta$ in $[0, 2\pi)$ there exists a $u$ in $[0, 2\pi)$ so that (5) holds. We can thus treat $\beta$ as the input since for any $\beta$ computed by a controller we can compute the steering angle $u$ via the relation (5) and apply this command to the motor steering for the wheels. This will greatly simplify the equations you have to work with.
+\begin{proof}[Solution]
+First, let us look at relation (5):
+\[\beta = \atan\left(\dfrac{\ell_r}{\ell_r+\ell_f}\tan(u)\right)
+\]
+Note that we know $\ell_f = 1.1m$ and $\ell_r = 1.7m$, so subsitututing, we are left with 
+\[\beta = \atan\left(\dfrac{1.7}{1.7+1.1}\tan(u)\right)= \atan(k\tan(u))
+\]
+where $k=\dfrac{1.7}{2.8} \approx 0.607142857$ \newline
+Note that the range of $tan(u)$ for $u \in [0, 2\pi)$ is all real numbers, so the range of $ktan(u)$ must also be all real numbers. Therefore, we can deal with $\atan$ function's regular range, as we have included all numbers in its domain. Assuming that the given $\atan$ refers to a four quadrant tangent inverse function, we thus arrive at the conclusion that for any desired $\beta \in [0, 2\pi)$ there exists some $u \in [0, 2\pi)$
 \end{proof}
-\item[(b)] Give a combinatorial argument to show that $f_{n+2}-1=\sum_{i=1}^{n} f_i$. (Hint: think about strings that sum to $n+2$ and consider the position of the first $2$.)
-\begin{proof}
-
-\end{proof}
-\end{enumerate}
 
 \subsection*{Problem 2}
-The sequence of integers described in Problem 1 is known as the \emph{Fibonacci sequence}. The sequence $f_n$ can be also be defined according to the  recurrence relation $f_n=f_{n-1}+f_{n-2}$,  $n \geq 3$, and the initial conditions $f_1=1$, $f_2=1$.
-\begin{enumerate}
-    \item[(a)] List the first $10$ Fibonacci numbers.
-    \begin{proof}[Answer]
-    
-    \end{proof}
-    \item[(b)] Reprove the identity $f_{n+2}-1=\sum_{i=1}^{n} f_i$ from 1(a) using mathematical induction.
-    \begin{proof}
-    
-    \end{proof}
-\end{enumerate}
-\subsubsection*{Problem 3}
-If $P_n$ denotes the number of permutations of $n$ distinct objects, find a recurrence relation and an initial condition for the sequence $P_1, P_2, P_3, \dots$. 
+We first consider the lane keeping problem, i.e., the design of a controller that keeps the car in the center of its lane. For this purpose we assume the car’s velocity to be constant at 35 mph, that the lane center corresponds to $y = 0$, and that we have a sensor measuring $y$ (in reality, the position of the car on the lane would be computed by using vision to detect the location of the lane markers). Linearize the equations of motion and design a controller that stabilizes the car at $y = 0$ using the linearized model (use the transfer function from $\beta$ to $y$). You don’t need to work with equation (1) since $x$ will not be at equilibrium. Provide some plots showing the controller works as intended.
 \begin{proof}[Solution]
 
 \end{proof}
