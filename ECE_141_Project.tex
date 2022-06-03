@@ -183,7 +183,7 @@ Then, we have that:
 \[\omega_{n} = \sqrt{\frac{k_{I}}{1+k_{D}}}\]
 \[2\omega_{n}=\frac{k_{P}}{1+k_{D}}\]
 \[\frac{k_{P}}{2+2k_{D}} =  \sqrt{\frac{k_{I}}{1+k_{D}}}\]
-Here, we can pick $k_P=2$,$k_D=1$, and $k_I=\frac{1}{2}$ to satisfy this equation. 
+Here, we can pick $k_P=2$,$k_D=1$, and $k_I=\frac{1}{2}$ to satisfy this equation. Note as all of these terms are positive, all coefficients of the characteristic polynomial are also postiive, and thus there are no non-negative poles.
 
 \begin{figure}[h!]
     \centering
@@ -215,7 +215,7 @@ As such, even though there is overshoot, the acceleration is more normal, and is
     \caption{Plots for PID with Saturation block}
   \end{figure}
 
-  We can confirm that this model works for 
+  
 \end{proof}
 
 \newpage
@@ -317,7 +317,7 @@ Therefore, we've arrived at the following range of inital conditions
 
   We see in the figure below that changing the speed of the veloicty controller does not change the output y in any significant way.
   It is almost impossible to distinguish between the different lines for different speeds of the controller. Meanwhile, we can confirm that the controllers with higher $k_D$
-  are indeed working slower with the subplots.
+  are indeed working slower with the subplots. 
 
   \begin{figure}[h!]
     \centering
