@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.18)  3 JUN 2022 03:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.18)  3 JUN 2022 10:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -137,18 +137,39 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen158
+\captionmargin=\dimen159
+\caption@leftmargin=\dimen160
+\caption@rightmargin=\dimen161
+\caption@width=\dimen162
+\caption@indent=\dimen163
+\caption@parindent=\dimen164
+\caption@hangindent=\dimen165
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count274
+\c@continuedfloat=\count275
+)
+\c@subfigure=\count276
+\c@subtable=\count277
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen158
+\col@sep=\dimen166
 \ar@mcellbox=\box52
-\extrarowheight=\dimen159
+\extrarowheight=\dimen167
 \NC@list=\toks31
 \extratabsurround=\skip55
 \backup@length=\skip56
 \ar@cellbox=\box53
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count274
+\l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box54
 ) (./ECE_141_Project.aux)
 \openout1 = `ECE_141_Project.aux'.
@@ -204,16 +225,16 @@ LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count275
-\scratchdimen=\dimen160
+\scratchcounter=\count279
+\scratchdimen=\dimen168
 \scratchbox=\box55
-\nofMPsegments=\count276
-\nofMParguments=\count277
+\nofMPsegments=\count280
+\nofMParguments=\count281
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count278
-\MPscratchDim=\dimen161
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
+\MPscratchCnt=\count282
+\MPscratchDim=\dimen169
+\MPnumerator=\count283
+\makeMPintoPDFobject=\count284
 \everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -221,6 +242,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -230,20 +253,67 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./ECE_141_Project.aux) ) 
-Here is how much of TeX's memory you used:
- 3257 strings out of 478268
- 48833 string characters out of 5846347
- 349183 words of memory out of 5000000
- 21444 multiletter control sequences out of 15000+600000
- 476555 words of font info for 57 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 55i,6n,62p,805b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ECE_141_Project.pdf (2 pages, 130396 bytes).
-PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
 
+ []
+
+<ECE141Q2Model.png, id=17, 1361.085pt x 512.91624pt>
+File: ECE141Q2Model.png Graphic file (type png)
+<use ECE141Q2Model.png>
+Package pdftex.def Info: ECE141Q2Model.png  used on input line 68.
+(pdftex.def)             Requested size: 469.75502pt x 177.0189pt.
+<img1.png, id=19, 680.5425pt x 442.65375pt>
+File: img1.png Graphic file (type png)
+<use img1.png>
+Package pdftex.def Info: img1.png  used on input line 75.
+(pdftex.def)             Requested size: 469.75502pt x 305.54622pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./ECE141Q2Model.png>]
+<img2.png, id=25, 801.99625pt x 683.55376pt>
+File: img2.png Graphic file (type png)
+<use img2.png>
+Package pdftex.def Info: img2.png  used on input line 83.
+(pdftex.def)             Requested size: 187.89914pt x 160.14493pt.
+<img3.png, id=26, 729.72626pt x 685.56125pt>
+File: img3.png Graphic file (type png)
+<use img3.png>
+Package pdftex.def Info: img3.png  used on input line 87.
+(pdftex.def)             Requested size: 187.89914pt x 176.52614pt.
+<img4.png, id=27, 806.01125pt x 685.56125pt>
+File: img4.png Graphic file (type png)
+<use img4.png>
+Package pdftex.def Info: img4.png  used on input line 91.
+(pdftex.def)             Requested size: 187.89914pt x 159.82024pt.
+<img5.png, id=28, 736.7525pt x 683.55376pt>
+File: img5.png Graphic file (type png)
+<use img5.png>
+Package pdftex.def Info: img5.png  used on input line 95.
+(pdftex.def)             Requested size: 187.89914pt x 174.32997pt.
+<img6.png, id=29, 783.92876pt x 681.54625pt>
+File: img6.png Graphic file (type png)
+<use img6.png>
+Package pdftex.def Info: img6.png  used on input line 99.
+(pdftex.def)             Requested size: 187.89914pt x 163.35605pt.
+ [3 <./img1.png>] [4 <./img2.png> <./img3.png> <./img4.png> <./img5.png> <./img6.png>]
+<Q3Model.png, id=43, 865.2325pt x 292.09125pt>
+File: Q3Model.png Graphic file (type png)
+<use Q3Model.png>
+Package pdftex.def Info: Q3Model.png  used on input line 116.
+(pdftex.def)             Requested size: 469.75502pt x 158.58264pt.
+<img7.png, id=44, 794.97pt x 683.55376pt>
+File: img7.png Graphic file (type png)
+<use img7.png>
+Package pdftex.def Info: img7.png  used on input line 136.
+(pdftex.def)             Requested size: 187.89914pt x 161.56343pt.
+<img8.png, id=45, 796.9775pt x 682.55pt>
+File: img8.png Graphic file (type png)
+<use img8.png>
+Package pdftex.def Info: img8.png  used on input line 140.
+(pdftex.def)             Requested size: 187.89914pt x 160.92001pt.
+<img9.png, id=46, 815.045pt x 686.565pt>
+File: img9.png Graphic file (type png)
+<use img9.png>
+P
