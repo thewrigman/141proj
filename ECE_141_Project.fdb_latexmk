@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1654282012 "/Users/ineshchakrabarti/Desktop/141/141proj/ECE_141_Project.tex" "ECE_141_Project.pdf" "ECE_141_Project" 1654282027
-  "/Users/ineshchakrabarti/Desktop/141/141proj/ECE_141_Project.tex" 1654282011 18865 9fe425a4838aef7d0c79833ce14a619f ""
+["pdflatex"] 1654282174 "/Users/ineshchakrabarti/Desktop/141/141proj/ECE_141_Project.tex" "ECE_141_Project.pdf" "ECE_141_Project" 1654282189
+  "/Users/ineshchakrabarti/Desktop/141/141proj/ECE_141_Project.tex" 1654282173 18866 ee77efea7a4e191cd8d06a1f08b361d2 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -73,8 +73,8 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1650349847 2826451 e12a1684944c4320849879fc1085e288 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "ECE141Q2Model.png" 1654253244 636022 388aa47ddc8b6ef7e8d93ab380b6fe11 ""
-  "ECE_141_Project.aux" 1654282027 2419 a4ec8aff5c45338cef72ebd515f12a48 "pdflatex"
-  "ECE_141_Project.tex" 1654282011 18865 9fe425a4838aef7d0c79833ce14a619f ""
+  "ECE_141_Project.aux" 1654282189 2419 a4ec8aff5c45338cef72ebd515f12a48 "pdflatex"
+  "ECE_141_Project.tex" 1654282173 18866 ee77efea7a4e191cd8d06a1f08b361d2 ""
   "Q3Model.png" 1654257690 293998 2209d6c2577b5953cfad23c606afdbdb ""
   "img1.png" 1654254628 434531 59c0b33ccb911df86f3293990984d5ce ""
   "img10.png" 1654261562 769066 52ef9bf8827ed0e2b54e3d2d1ea1e80c ""
