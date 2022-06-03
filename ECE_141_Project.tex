@@ -43,6 +43,22 @@ Note that the range of $tan(u)$ for $u \in [0, 2\pi)$ is all real numbers, so th
 We first consider the lane keeping problem, i.e., the design of a controller that keeps the car in the center of its lane. For this purpose we assume the car’s velocity to be constant at 35 mph, that the lane center corresponds to $y = 0$, and that we have a sensor measuring $y$ (in reality, the position of the car on the lane would be computed by using vision to detect the location of the lane markers). Linearize the equations of motion and design a controller that stabilizes the car at $y = 0$ using the linearized model (use the transfer function from $\beta$ to $y$). You don’t need to work with equation (1) since $x$ will not be at equilibrium. Provide some plots showing the controller works as intended.
 \begin{proof}[Solution]
 
-First we note that the nonlinear differential equation we have is
+First we note that the equations we must linearize are:
+\[\dot{y} = v\sin(\psi+\beta)
+\]
+\[\dot{\psi} = \frac{v}{\ell_r}\sin(\beta)
+\]
+Let us now try to find a value to linearize these equations around. It makes sense to linearize these equatoins around $\psi = 0$ and $\beta = 0$, as most of our values for these two angles will fall near these values, especially since we are trying to straighten teh car in the lane.
+\newline
+Then, we can use the small-angle approximation, which holds true around $0$, use the approximations:
+\[\sin(\psi+\beta) \approx \psi+\beta 
+\]
+\[\sin(\beta) \approx \beta
+\]
+Thus, our linearized equations are:
+\[\dot{y} = v(\psi + \beta)
+    \]
+\[\dot{\psi} = \frac{v\beta}{\ell_r}
+    \]
 \end{proof}
 \end{document}
