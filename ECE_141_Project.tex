@@ -60,5 +60,8 @@ Thus, our linearized equations are:
     \]
 \[\dot{\psi} = \frac{v\beta}{\ell_r}
     \]
+Note that the velocity of the car for this question is $35$ mph, which is the same as $15.6464$ m/s. We can also calculate $\frac{v}{\ell_r}=\frac{15.6464}{1.7}=9.2038$. \newline
+Now, let us determine what it means for the controller to work as intended. For the controller to work as intended, we must haev that the car does not respond too fast; this means that it should not jerk immediately to correct itself. Thus, we can set a constraint for $t_r > 0.2$s. However, we also want to minimize overshoot to some value, as the car may swerve with excessive overshoot, which is undesirable. Thus, let us arbitarily set a maximum overshoot of $0.3$m, which is visibly about a foot, an amount most people would be comfortable having the car adjust by. However, I will limit the car to one noticable oscillation, where noticable is any oscillation above 0.1. \newline
+Let us now determine what valid inital conditions for $y$ and $\psi$ would be. It makes sense to limit $y$ to small values. Considering the next question uses lanes $3$ m wide, let us use $y \in [-1.5,1.5]$. Similarily, let us consider the range for $\psi$. Similarily, we can arbitarily decide $\psi \in \left[-\frac{pi}{6},\frac{pi}{6}\right]$. Now we can use simulink to simulate our model. \newline
 \end{proof}
 \end{document}
