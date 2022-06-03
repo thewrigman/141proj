@@ -6,7 +6,7 @@
 
 %%Math symbols, proof environments
 \usepackage{amsmath,amsthm,amssymb, graphicx}
-
+\usepackage{subcaption}
 \newcommand{\atan}{\tan^{-1}}
 
 %%Use this package for matrices
@@ -61,7 +61,48 @@ Thus, our linearized equations are:
 \[\dot{\psi} = \frac{v\beta}{\ell_r}
     \]
 Note that the velocity of the car for this question is $35$ mph, which is the same as $15.6464$ m/s. We can also calculate $\frac{v}{\ell_r}=\frac{15.6464}{1.7}=9.2038$. \newline
-Now, let us determine what it means for the controller to work as intended. For the controller to work as intended, we must haev that the car does not respond too fast; this means that it should not jerk immediately to correct itself. Thus, we can set a constraint for $t_r > 0.2$s. However, we also want to minimize overshoot to some value, as the car may swerve with excessive overshoot, which is undesirable. Thus, let us arbitarily set a maximum overshoot of $0.3$m, which is visibly about a foot, an amount most people would be comfortable having the car adjust by. However, I will limit the car to one noticable oscillation, where noticable is any oscillation above 0.1. \newline
-Let us now determine what valid inital conditions for $y$ and $\psi$ would be. It makes sense to limit $y$ to small values. Considering the next question uses lanes $3$ m wide, let us use $y \in [-1.5,1.5]$. Similarily, let us consider the range for $\psi$. Similarily, we can arbitarily decide $\psi \in \left[-\frac{pi}{6},\frac{pi}{6}\right]$. Now we can use simulink to simulate our model. \newline
+Now, let us determine what it means for the controller to work as intended. For the controller to work as intended, we must haev that the car does not respond too fast; this means that it should not jerk immediately to correct itself. Thus, we can set a constraint for $t_r > 0.1$s, except for specific cases where it is normal for correction to occur very fast (such as when y = 0 and only the angle is different). However, we also want to minimize overshoot to some value, as the car may swerve with excessive overshoot, which is undesirable. Thus, let us arbitarily set a maximum overshoot of $0.5$m, which is about half a meter, an amount most people would be comfortable having the car adjust by. However, I will limit the car to one noticable oscillation, where noticable is any oscillation above 0.1. \newline
+Let us now determine what valid inital conditions for $y$ and $\psi$ would be. It makes sense to limit $y$ to small values. Considering the next question uses lanes $3$ m wide, let us use $y \in [-1.5,1.5]$. Similarily, let us consider the range for $\psi$. Similarily, we can arbitarily decide $\psi \in \left[-\frac{pi}{3},\frac{pi}{3}\right]$, which is approximately $\psi \in [-1,1]$. Now we can use simulink to simulate our model. \newline
+
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{ECE141Q2Model.png}
+    \caption{Linearized Simulink Model}
+\end{figure}
+
+Figure 1 dispalys the simulink block diagram we used for our linearized model. Note that we have used a PID controller. 
+Now let us apply inputs to this controller to different initial conditions to observe the controller behavior:
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{img1.png}
+    \caption{Step Response for Controller}
+\end{figure}
+First, note that there is zero steady state error with a step input in unity feedback. We also see that it meets all of our required conditions. Next, let us observe the controller's response to differnet initial conditions. 
+\newpage
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img2.png}
+      \caption{Plots for y=0}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img3.png}
+      \caption{Plots for y=0.75}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+        \includegraphics[width=\linewidth]{img4.png}
+        \caption{Plots for y=1.5}
+      \end{subfigure}
+      \begin{subfigure}{0.4\linewidth}
+        \includegraphics[width=\linewidth]{img5.png}
+        \caption{Plots for y=-0.75}
+      \end{subfigure}
+      \begin{subfigure}{0.4\linewidth}
+          \includegraphics[width=\linewidth]{img6.png}
+          \caption{Plots for y=-1.5}
+        \end{subfigure}
+    \caption{Plots for different initial conditions}
+    \label{fig:coffee}
+  \end{figure}
+We note that our controller does work as intended and meet all of our conditions.
 \end{proof}
 \end{document}
+
