@@ -340,11 +340,52 @@ creases? Provide some plots to justify your answer.
 
 \begin{proof}[Solution]
 
-Let us assume the inital velocity is 0, as we know our controller has relatively the same behavior in its acceptable range.
+Let us assume the inital velocity is 0 and inital $y$ is 0.6 as we know our controller has relatively the same behavior in its acceptable range.
 Now, let us plot the effect of decreasing the speed of the controller as the commanded velocity increases.
 
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img26.png}
+      \caption{Position}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img27.png}
+      \caption{Velocity}
+    \end{subfigure}
+    \caption{Command Velocity of 35mph}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img28.png}
+      \caption{Position}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img29.png}
+      \caption{Velocity}
+    \end{subfigure}
+    \caption{Command Velocity of 70mph}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img30.png}
+      \caption{Position}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img31.png}
+      \caption{Velocity}
+    \end{subfigure}
+    \caption{Command Velocity of 140mph}
+\end{figure}
 
 
+We see in the figures above that increasing command velocity does not change the answer to number 5 for values that are 
+within the acceptable range of the controller, and even out of the range of the controller, as even with a velocity of 140mph, different lines for position across different $k_D$ are essentially negligible. However, this is simply due to the fact that acceleration is capped in the controller for velocity, so we have a linear increase in velocity, or constant acceleration across all plots at such high command velocity.
+Thus, the answer to the previous problem does not change.
 \end{proof}[Solution]
 
 \end{document}

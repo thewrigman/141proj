@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.18)  3 JUN 2022 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.18)  3 JUN 2022 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,4 +316,98 @@ Package pdftex.def Info: img8.png  used on input line 140.
 <img9.png, id=46, 815.045pt x 686.565pt>
 File: img9.png Graphic file (type png)
 <use img9.png>
-P
+Package pdftex.def Info: img9.png  used on input line 144.
+(pdftex.def)             Requested size: 187.89914pt x 158.27328pt.
+<img10.png, id=47, 810.02625pt x 687.56876pt>
+File: img10.png Graphic file (type png)
+<use img10.png>
+Package pdftex.def Info: img10.png  used on input line 148.
+(pdftex.def)             Requested size: 187.89914pt x 159.49088pt.
+<img11.png, id=48, 808.01875pt x 683.55376pt>
+File: img11.png Graphic file (type png)
+<use img11.png>
+Package pdftex.def Info: img11.png  used on input line 152.
+(pdftex.def)             Requested size: 187.89914pt x 158.94547pt.
+ [5 <./Q3Model.png>] [6 <./img7.png> <./img8.png> <./img9.png> <./img10.png> <./img11.png>]
+File: Q3Model.png Graphic file (type png)
+<use Q3Model.png>
+Package pdftex.def Info: Q3Model.png  used on input line 191.
+(pdftex.def)             Requested size: 187.89914pt x 63.43127pt.
+<img12.png, id=61, 562.1pt x 398.48875pt>
+File: img12.png Graphic file (type png)
+<use img12.png>
+Package pdftex.def Info: img12.png  used on input line 195.
+(pdftex.def)             Requested size: 187.89914pt x 133.20421pt.
+<q3goodmodel.png, id=62, 349.305pt x 92.345pt>
+File: q3goodmodel.png Graphic file (type png)
+<use q3goodmodel.png>
+Package pdftex.def Info: q3goodmodel.png  used on input line 208.
+(pdftex.def)             Requested size: 187.89914pt x 49.67532pt.
+<img13.png, id=63, 563.10374pt x 401.5pt>
+File: img13.png Graphic file (type png)
+<use img13.png>
+Package pdftex.def Info: img13.png  used on input line 212.
+(pdftex.def)             Requested size: 187.89914pt x 133.97186pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./img12.png>]
+<q5model.png, id=70, 848.16875pt x 367.3725pt>
+File: q5model.png Graphic file (type png)
+<use q5model.png>
+Package pdftex.def Info: q5model.png  used on input line 233.
+(pdftex.def)             Requested size: 469.75502pt x 203.46811pt.
+ [8 <./q3goodmodel.png> <./img13.png> <./q5model.png>]
+<img14.png, id=77, 744.7825pt x 689.57625pt>
+File: img14.png Graphic file (type png)
+<use img14.png>
+Package pdftex.def Info: img14.png  used on input line 250.
+(pdftex.def)             Requested size: 187.89914pt x 173.97194pt.
+<img15.png, id=78, 803.0pt x 667.49374pt>
+File: img15.png Graphic file (type png)
+<use img15.png>
+Package pdftex.def Info: img15.png  used on input line 254.
+(pdftex.def)             Requested size: 187.89914pt x 156.18883pt.
+<img16.png, id=79, 805.0075pt x 687.56876pt>
+File: img16.png Graphic file (type png)
+<use img16.png>
+Package pdftex.def Info: img16.png  used on input line 263.
+(pdftex.def)             Requested size: 187.89914pt x 160.48756pt.
+<img17.png, id=80, 812.03375pt x 665.48625pt>
+File: img17.png Graphic file (type png)
+<use img17.png>
+Package pdftex.def Info: img17.png  used on input line 267.
+(pdftex.def)             Requested size: 187.89914pt x 153.98267pt.
+<img18.png, id=81, 795.97375pt x 688.5725pt>
+File: img18.png Graphic file (type png)
+<use img18.png>
+Package pdftex.def Info: img18.png  used on input line 276.
+(pdftex.def)             Requested size: 187.89914pt x 162.53952pt.
+<img19.png, id=82, 801.99625pt x 665.48625pt>
+File: img19.png Graphic file (type png)
+<use img19.png>
+Package pdftex.def Info: img19.png  used on input line 280.
+(pdftex.def)             Requested size: 187.89914pt x 155.91202pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img20.png, id=83, 765.86125pt x 690.58pt>
+File: img20.png Graphic file (type png)
+<use img20.png>
+Package pdftex.def Info: img20.png  used on input line 289.
+(pdftex.def)             Requested size: 187.89914pt x 169.42014pt.
+<img21.png, id=84, 811.03pt x 687.56876pt>
+File: img21.png Graphic file (type png)
+<use img21.png>
+Package pdftex.def Info: img21.png  used on input line 293.
+(pdftex.def)             Requested size: 187.89914pt x 159.29153pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img22.png, id=85, 807.015pt x 687.56876pt>
+File: img22.png Graphic file (type png)
+<use img22.png>
+Package pdftex.def Info: img22.png  used on input line 302.
+(pdftex.def)             Requested size: 187.89914pt x 160.088
