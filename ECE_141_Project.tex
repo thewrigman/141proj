@@ -235,7 +235,15 @@ We begin by creating the simulink model:
 \end{figure}
 
 Note that in this case, the controller regulating velocity is much slower than the controller regulating position due to our saturation block. 
-
+We see from the figures below that the controller is acceptable although rising time is higher than the controller from Question 1.
+Note the oscillations are not significant as none of them are above 0.2 m, a negligible amount. However, when the inital speed reaches
+70 mph, or perhaps even earlier, the change in position is far more jerky and sudden. This is associated with rapid deceleration due to pressing of the breaks.
+At 55.5 mph, the rising time is a little higher than 0.2s, so the maximum starting speed the controller can account for is 70mph.
+Therefore, we've arrived at the following range of inital conditions
+\[ v \in (0, 24.81) 
+\]
+\[ y \in (-0.6, 0.6)
+\]
 \begin{figure}[h!]
     \centering
     \begin{subfigure}{0.4\linewidth}
@@ -247,7 +255,7 @@ Note that in this case, the controller regulating velocity is much slower than t
       \caption{Velocity}
     \end{subfigure}
     \caption{Plots for v(0)=0}
-  \end{figure}
+\end{figure}
 
   \begin{figure}[h!]
     \centering
@@ -259,9 +267,84 @@ Note that in this case, the controller regulating velocity is much slower than t
       \includegraphics[width=\linewidth]{img17.png}
       \caption{Velocity}
     \end{subfigure}
-    \caption{Plots for v(0)=17.5 mph}
+    \caption{Plots for v(0)=35 mph}
   \end{figure}
+
+  \begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img18.png}
+      \caption{Position}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img19.png}
+      \caption{Velocity}
+    \end{subfigure}
+    \caption{Plots for v(0)=35 mph}
+  \end{figure}
+
+  \begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img20.png}
+      \caption{Position}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img21.png}
+      \caption{Velocity}
+    \end{subfigure}
+    \caption{Plots for v(0)=52.5 mph}
+\end{figure}
+
+    \begin{figure}[h!]
+        \centering
+        \begin{subfigure}{0.4\linewidth}
+          \includegraphics[width=\linewidth]{img22.png}
+          \caption{Position}
+        \end{subfigure}
+        \begin{subfigure}{0.4\linewidth}
+          \includegraphics[width=\linewidth]{img23.png}
+          \caption{Velocity}
+        \end{subfigure}
+        \caption{Plots for v(0)=70 mph}
+  \end{figure}
+
+  Next we must observe what happens when we decrease the speed of the velocity controller. I will not do this by decreasing the  
+  maximum acceleration created by the saturation block, as that does not realistically model the behavior of a car
+  Rather, I will increasing the $k_D$ constant in the PID controller .
+  Seeing as within the acceptable range, all starting conditions have similar behaviors, let us obsere what happens when we reduce the speed of the velocity controller For
+  $y(0)=0.6$ and $v(0)=17.5mph$. \newline
+
+  We see in the figure below that changing the speed of the veloicty controller does not change the output y in any significant way.
+  It is almost impossible to distinguish between the different lines for different speeds of the controller. Meanwhile, we can confirm that the controllers with higher $k_D$
+  are indeed working slower with the subplots.
+
+  \begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img24.png}
+      \caption{Position}
+    \end{subfigure}
+    \begin{subfigure}{0.4\linewidth}
+      \includegraphics[width=\linewidth]{img25.png}
+      \caption{Velocity}
+    \end{subfigure}
+    \caption{Plots with varying speeds of veloicty controller}
+\end{figure}
+
 \end{proof}
 
-\end{document}
+\subsection*{Problem 6}
+How does the answer to the previous question changes as the commanded velocity in-
+creases? Provide some plots to justify your answer.
 
+\begin{proof}[Solution]
+
+Let us assume the inital velocity is 0, as we know our controller has relatively the same behavior in its acceptable range.
+Now, let us plot the effect of decreasing the speed of the controller as the commanded velocity increases.
+
+
+
+\end{proof}[Solution]
+
+\end{document}
